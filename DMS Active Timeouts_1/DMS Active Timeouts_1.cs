@@ -71,7 +71,7 @@ namespace DMS_Active_Timeouts_1
                     {
                         ParameterName = "DMS Active Timeouts",
                         DmaName = agent.Item1,
-                        ReceivedValue = Convert.ToString(activeAlarms.Count(x => x.Severity == "Timeout" && agent.Item2.Equals(x.HostingAgentID) && x.ParameterName == "DataMiner run-time")),
+                        ReceivedValue = Convert.ToString(activeAlarms.Count(x => x.Severity == "Timeout" && agent.Item2.Equals(x.HostingAgentID) && x.ParameterName == "Communication state")),
                     };
 
                     results.Add(testResult);
